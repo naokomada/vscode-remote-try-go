@@ -14,6 +14,9 @@ RUN groupadd --gid $USER_GID $USERNAME \
     && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
     && chmod 0440 /etc/sudoers.d/$USERNAME
 
+RUN apt-get install -y python3 python3-pip
+RUN pip3 install online-judge-tools
+
 ENV GO111MODULE on
 WORKDIR /go/src/work
 
