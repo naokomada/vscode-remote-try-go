@@ -4,7 +4,7 @@
 	"name": "Go",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	// "image": "mcr.microsoft.com/devcontainers/go:0-1.19-bullseye",
-	"dockerComposeFile": ["../docker-compose.yml"],
+	"dockerComposeFile": ["docker-compose.yml"],
 	"service": "app" ,
 	"workspaceFolder": "/go/src/work",
 
